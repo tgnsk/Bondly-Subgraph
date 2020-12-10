@@ -1,0 +1,22 @@
+type _Approval @entity {
+  id: ID!
+  count: BigInt!
+  owner: Bytes! 
+  spender: Bytes! 
+  value: BigInt!
+}
+
+type _OwnershipTransferred @entity {
+  id: ID!
+  count: BigInt!
+  previousOwner: Bytes! 
+  newOwner: Bytes! 
+}
+
+type _Transfer @entity {
+  id: ID!
+  count: BigInt!
+  from: Bytes! 
+  to: Bytes! 
+  value: BigInt!
+}
